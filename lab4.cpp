@@ -21,6 +21,10 @@ int main()
     printf("\n");
     for (int i = 0; i < 5; i++) {
         array[i] = rand() % 21 - 10;
-        printf("%d ", array[i]);
+
+        if (array[i] % 2 != 0)
+        {
+            printf("%d ", array[i]);
+        }
     }
 }
